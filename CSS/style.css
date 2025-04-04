@@ -1,0 +1,100 @@
+@import "./globla.css";
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.card {
+  width: 920px;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.card--sedans {
+  background-color: #e28625;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  padding: 48px;
+}
+.card--sedans::before {
+  content: "";
+  background-image: url(../images/sedans-logo.svg);
+  width: 64px;
+  height: 40px;
+  display: block;
+  margin-bottom: 35px;
+}
+.card__title {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.card__description {
+  font-family: Lexend Deca;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  margin-bottom: 83px;
+  color: #f2f2f2;
+  opacity: 75%;
+}
+.card__button {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  color: #e28625;
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  padding: 11px 31.5px;
+  transition: .3s;
+
+  &:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color:transparent;
+  }
+}
+.card--suvs {
+  background-color: #006971;
+  padding: 48px;
+}
+.card--suvs::before {
+  content: "";
+  background-image: url(../images/suvs-logo.svg);
+  width: 64px;
+  height: 40px;
+  display: block;
+  margin-bottom: 35px;
+}
+.card--luxury {
+  background-color: #004140;
+  padding: 48px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.card--luxury::before {
+  content: "";
+  background-image: url(../images/luxury-logo.svg);
+  width: 64px;
+  height: 40px;
+  display: block;
+  margin-bottom: 35px;
+}
